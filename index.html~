@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/beb121aa5f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/alah.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE DEVELOPER</p>
+                <h1> Hi, I am <span>Salah Abderraouf </span> </br>from Algeria<span style="color: red;">,</span></h1>               
+            </div>
+
+        </div>
+    </div>
+    <!-------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/moi.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My name is Salah Abderraouf and I am a software enthusiast.<br>My skills also include the ability to architect, code using programming languages to
+                        build new tools and techniques to aid in managing and problem solving.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"             onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"             onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>                           
+                            <li>  <span> WEB/MOBILE DEVELOPMENT</span><br>Development Frontend/Backend.</li>
+                            <li>  <span>DATA ANALYSIS </span><br>
+                            Constantly looks for ways to cut costs while increasing profits.</li>
+                            <li><span> IT SUPPORT</span><br>
+                            monitoring and maintaining the company computer systems, installs, configuring hardware and software, and solving technical issues as they arise. </li>                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>  <span> Java Backend Developer AT Kepler Technologies, https://kepler-technologies.com , 2023-PRESENT</span><br>Manipulated multiple Types of Database Systems (SQL AND NO SQL).
+                                Delivered high-impact backend solutions in an Agile environment by taking full ownership of complex technical challenges. Built and
+                                optimized Spring Boot microservices and Jira Datacenter/Cloud Applications used by real clients
+                                Provided professional technical support to clients and educated them on
+                                how to use the company's software programs and applications.
+                            </li>
+                            <li>  <span> Java Full Stack Developer At Noorlink Company , 2022-2023</span>
+                                <br>Spearheaded the development of web applications for Aiga https://www.aiga.fr, transforming complex user needs into modular,
+                                maintainable systems using Java Spring boot and vue.js.
+                                Orchestrated development of multi-platform features, improving user engagement and streamlining operations for Aiga’s childcare
+                                management tools.
+                            </li>
+                            <li>  <span> DATA ANALYST AT TEEMWORK COMPANY, 2020-2021</span><br>Manipulated multiple Types of Database Systems (SQL AND NO SQL).
+                                Provided professional technical support to clients and educated them on
+                                how to use the company's software programs and applications.
+                                Established the necessary documents, supports, and guidelines using Latex.
+                            </li>
+                            <li>  <span> MASTER's OFF-CYCLE INTERNSHIP AT SARL PHICRA ,ALGIERS 2020-2021</span><br>Designed and builded a laboratory management website system using Java Spring Boot, Mysql technologies
+                                in the back-end and JavaScript, Bootstrap, Html, Css in Front-END.</li>
+                            <li>  <span> VOLUNTEER INTERN AT THE FOOD COMPANY  AMORBENAMOR ,GUELMA 2019</span><br>Created a mobile application for managing QR codes on cans packaging using Android Studio.<br>
+                                Installed and configured hardware and software components.</li>                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>                           
+                            <li>  <span> MASTER'S DEGREE IN SOFTWARE ENGINEERING </span><br>University of Abderrahmane Mira ,Béjaia 2018-2021</li>
+                            <li>  <span> BACHELOR'S DEGREE IN COMPUTER INFORMATION SYSTEMS</span><br>University of Abderrahmane Mira ,Béjaia 2014-2017</li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------services-->
+    <div id="services">
+        <div class="container">
+            <div class="sub-title">My Services</div>
+                <div class="services-list">
+                        <div> 
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web/Mobile App Dev</h2>
+                            <p> it’s been a minute since your session. How are you feeling? If there’s anything we can help with, just reply in contact section and let us know.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div> 
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h2>DATA ANALYSIS</h2>
+                            <p>No great marketing decisions have ever been made on qualitative data.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div> 
+                            <i class="fa-solid fa-sliders"></i>
+                            <h2>IT SUPPORT</h2>
+                            <p>It’s not that we use technology, we live technology.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                </div>
+        </div>
+        <!------Portfolio---->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/kepler.jpg" alt="">
+                        <div class="layer">
+                            <h3 style="color: aliceblue;">Kepler Technologies web site</h3>
+                            <p style="color: aliceblue;">Contributed to the development of the company's website</p>
+                            <a href="https://kepler-technologies.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/jira.jpg" alt="">
+                        <div class="layer">
+                            <h3 style="color: aliceblue;">Jira Cloud/Datacenter applications</h3>
+                            <p style="color: aliceblue;">Built six production-ready Jira Cloud and Data Center plugins used by enterprise clients.</p>
+                            <a href="https://marketplace.atlassian.com/vendors/1216919/kepler-technologies"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/aiga.jpeg" alt="">
+                        <div class="layer">
+                            <h3 style="color: aliceblue;">Aiga web site</h3>
+                            <p style="color: aliceblue;">Contributed to the development of the company's website.</p>
+                            <a href="https://www.aiga.fr/logiciel-gestion-paie-compta-grh-associations_cloe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/y.jpg" alt="">
+                            <div class="layer">
+                               <h3 style="color: aliceblue;">Youtube video Downloader</h3> 
+                                    <p style="color: aliceblue;">Copy and past Desired Youtube video Link and download it for free</p>
+                                        <a href="https://salahabderraoufdownloader.onrender.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/bejtour.jpg" alt="">
+                        <div class="layer">
+                            <h3 style="color: aliceblue;">Toutists Guide App"Bejaia-tours"</h3> 
+                                 <p style="color: aliceblue;">discover the most beautifull places in Béjaia</p>
+                                    <a href="https://salahabderraouf.github.io/hebergement/templates/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/data.jpg" alt="">
+                        <div class="layer">
+                            <h3 style="color: aliceblue;">Inventory Reports</h3> 
+                                 <p style="color: aliceblue;">CMR DRINKS && Inventory reports</p>
+                                     <a href="images/reports.pdf" download style="color: black;"><i class="fa-solid fa-arrow-up-right-from-square"></i>download</a>
+                         </div>
+                    </div>
+                </div>
+                <a href="https://github.com/salahabderraouf" class="btn">See more</a>
+            </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>abderraouf.salah.1995@gmail.com</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>+213 663178718</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/abderraouf-salah-461a33177/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/raouf.salahsalah.3"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Type your name" id ="n" required>
+                        <input type="email" name="Email" placeholder="Type your email" id ="e" required>
+                        <textarea name="Message" rows="6" placeholder="Your message" id ="t" required></textarea>
+                        <button type="button" class="btn btn2" id="b" >Submit</button>
+                    </form> 
+                    <span id="msg">Contact me,</span>
+                </div>   
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright <i class="fa-regular fa-copyright"></i>Salah Abderraouf 2025
+            </p>
+        </div>
+    </div>
+        <script>
+            // Initialize EmailJS
+            emailjs.init("ZOCdGd7H3f8LNP8HR"); // your public key
+
+            // Wait for DOM to be ready
+            document.addEventListener("DOMContentLoaded", function () {
+
+                const button = document.getElementById("b");
+                const msg = document.getElementById("msg");
+                const form = document.getElementById("contact-form");
+
+                button.addEventListener("click", function () {
+
+                    const name = document.getElementById("n").value.trim();
+                    const email = document.getElementById("e").value.trim();
+                    const message = document.getElementById("t").value.trim();
+
+                    if (!name || !email || !message) {
+                        msg.innerHTML = "Please fill all fields.";
+                        msg.style.color = "red";
+                        return;
+                    }
+
+                    const params = {
+                        name: name,     // matches {{name}} in template
+                        email: email,   // matches {{email}} in template
+                        message: message
+                    };
+
+                    emailjs.send("service_qb6f9b1", "template_g31jazc", params)
+                        .then(function () {
+                            msg.innerHTML = "Message sent successfully ✓";
+                            msg.style.color = "green";
+
+                            setTimeout(() => {
+                                msg.innerHTML = "Contact me,";
+                                msg.style.color = "";
+                            }, 3000);
+
+                            form.reset();
+                        })
+                        .catch(function (error) {
+                            msg.innerHTML = "Failed to send message. Try again.";
+                            msg.style.color = "red";
+                            console.error("EmailJS Error:", error);
+                        });
+
+                });
+
+            });
+        </script>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         
+        }
+    </script>
+    <script>
+        var sidemeu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+    </div>
+</body>
+</html>
